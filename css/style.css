@@ -468,27 +468,47 @@ nav ul li a:hover::after {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    max-width: 850px;
     width: 100%;
     height: 416px;
+    margin: 50px auto;
 }
 .resume-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: left;
-    width: 370px;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 350px;
     height: 416px;
     background-color: #e5efe2;
-    box-shadow: 2px 2px 10px 2px #0abead; 
+    -webkit-box-shadow: 2px 2px 10px 2px #0abead;
+            box-shadow: 2px 2px 10px 2px #0abead; 
 }
 .resume-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
     position: relative;
 }
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
 }
 .row:first-child {
     margin-top: 54px;
@@ -502,6 +522,30 @@ nav ul li a:hover::after {
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
+.row:hover {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #0ABEAD;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+}
+.row:hover p {
+    color: #fff;
+}
+.row:active {
+    width: 300px;
+    height: 50px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    background-color: #0ABEAD;
+}
 .circle {
     background: #0ABEAD;
     width: 50px;
@@ -513,10 +557,19 @@ nav ul li a:hover::after {
     -o-border-radius: 50%;
 }
 .resume-pics {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 42px;
     height: 416px;
     background: #0ABEAD;
@@ -531,7 +584,149 @@ nav ul li a:hover::after {
 .resume-pics img:last-child {
     margin-bottom: 71px;
 }
-
+.vlines {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 19px;
+    height: 416px;
+  }
+.vline1 {
+    width: 4px;
+    height: 416px;
+    background: #0ABEAD;
+  }
+.vline2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    height: 416px;
+}
+.vline2 div {
+    width: 19px;
+    height: 19px;
+    background: #0ABEAD;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.vline2 div:first-child {
+    margin-top: 24px;
+}
+.vline2 div:last-child {
+    margin-bottom: 106px;
+}
+.uni {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 440px;
+    height: 416px;
+    background-color: #e5efe2;
+    -webkit-box-shadow: 2px 2px 10px 2px #0abead;
+            box-shadow: 2px 2px 10px 2px #0abead;
+    position: relative;
+}
+.uni-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; 
+    padding: 0 10px 0 15px;
+}
+.uni .uni-about:nth-child(1) {
+    margin-top: 23px;
+}
+.uni .uni-about:nth-child(3) {
+    margin-bottom: 27px;
+}
+.uni-about span:nth-child(1) {
+    color: #FF5823;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.uni-about span:nth-child(2) {
+    color: #333333;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin: 21px 0 13px 0;
+}
+.uni-about span:nth-child(3) {
+    color: #333333;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+.res-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100px;
+    height: 416px;
+    position: absolute;
+    right: -10px;
+}
+.res-date div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F57F17;
+}
+.res-date div:nth-child(1) {
+    margin-top: 19px;
+}
+.res-date div:nth-child(3) {
+    margin-bottom: 100px;
+}
 .portfolio-works {
     margin-top: 40px;
 }
