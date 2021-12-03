@@ -456,7 +456,7 @@ nav ul li a:hover::after {
     cursor: pointer;
 }
 .resume-chart {
-    margin-top: 10px;
+    margin-top: 0;
 }
 .resume-info {
     display: -webkit-box;
@@ -729,4 +729,188 @@ nav ul li a:hover::after {
 }
 .portfolio-works {
     margin-top: 40px;
+}
+
+.portfolio-section {
+    width: 900px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: auto;
+    min-height: 200px;
+    max-height: 600px;
+    overflow: hidden;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+  }
+  .portfolio-section ul {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    vertical-align: top;
+    width: 40%;
+  }
+  .portfolio-section ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: rgb(199, 189, 189);
+    border-top: solid 2px #e9e9e9;
+    padding: 12px 5px;
+    z-index: 1;
+    opacity: .5;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+  }
+  .portfolio-section ul li:focus, a:focus {
+    outline: none;
+  }
+  .portfolio-section ul li:nth-child(1) a {
+    border-top: none;
+  }
+  .portfolio-section ul li a.active {
+    opacity: 1;
+  }
+  .portfolio-tag {
+    position: relative;
+    width: 100%;
+  }
+  .portfolio-icon {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background: #0ABEAD;
+    border-radius: 100%;
+    vertical-align: middle;
+  }
+  .portfolio-block {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .portfolio-circle {
+    position: absolute;
+    padding: 2px;
+    border: solid 2px #ffffff;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .portfolio-name {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 10px;
+    vertical-align: middle;
+    color: rgb(199, 189, 189);
+  }
+  .portfolio-browser {
+    width: 55%;
+    height: 95%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px 1px #0abead;
+            box-shadow: 0px 0px 5px 1px #0abead;
+}
+  #portfolio-1, #portfolio-2, #portfolio-3, #portfolio-4, #portfolio-5, #portfolio-6 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #portfolio-1 {
+    background-image: url(../images/portfolio1.png);
+  }
+  #portfolio-2 {
+    background-image: url(../images/portfolio2.png);
+  }
+  #portfolio-3 {
+    background-image: url(../images/portfolio3.png);
+  }
+  #portfolio-4 {
+    background-image: url(../images/portfolio4.png);
+  }
+  #portfolio-5 {
+    background-image: url(../images/portfolio5.png);
+  }
+  #portfolio-6 {
+    background-image: url(../images/portfolio6.png);
+  }
+.pricing-section {
+    margin-top: 40px;
+}
+.pricing-boxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 50px auto;
+}
+.pricing-box {
+    width: 370px;
+    height: 600px;
+    background: #e5efe2;
+    position: relative;
+}
+.pricing-colored-box {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    width: 370px;
+    height: 170px;
+}    
+.pricing-colored-box:nth-child(1) {
+    background: #FF6331;
+}
+.pricing-colored-box:nth-child(2) {
+    background: #803AFB;
+}
+.pricing-colored-box:nth-child(3) {
+    background: #F5276C;
 }
